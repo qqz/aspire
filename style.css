@@ -1,0 +1,190 @@
+/*
+Theme Name: Aspire
+Author: qqz
+Description: Simple theme for my portfolio
+Version: 1.0
+Text Domain: aspire       
+
+*/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: 'Itim', Arial, Helvetica, sans-serif;
+}
+html, body {
+    height: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+}
+main {
+    flex: 1 0 auto;
+}
+footer {
+    flex-shrink: 0;
+}
+body.admin-bar {
+    padding-top: 30px;
+}
+
+.navbar {
+    font-size: 18px;
+    background:#111;
+    padding-bottom: 10px;
+    min-height: 50px;
+}
+
+ul#menu-main-menu {
+    list-style-type: none;
+}
+#menu-main-menu a {
+    color: white;
+    text-decoration: none;
+    font-size:22px;
+    position: relative;
+    padding-bottom: 5px;
+}
+#menu-main-menu a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: lightpink;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
+}
+#menu-main-menu a:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+.main-menu-link {
+    text-decoration: none;
+    color: #111;
+}
+
+.menu-main-menu li {
+    text-align: center;
+    margin: 15px auto;
+}
+.navbar-toggle {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    color: white;
+    font-size: 24px;
+    z-index: 10;
+}
+ul#menu-main-menu.active {
+    display: block;
+}
+.landing-bio img {
+    border-radius: 100%;
+    max-width: 100%;
+    height:auto;
+}
+.landing-bio .wp-block-media-text__content {
+    font-size:18px;
+    font-weight:400;
+}
+.landing-bio h2 {
+    font-size:36px;
+    margin-bottom:20px;
+}
+@media screen and (max-width: 767px) {
+    
+    #menu-main-menu {
+        position:fixed;
+        top: -1000px;
+        transition: all 0.5s ease-out;
+    }
+    #main-navigation.active #menu-main-menu {
+        top: 0px;
+    }
+    #main-navigation .fa-times {
+        display:none;
+    }
+    #main-navigation.active .fa-bars {
+        display: none;
+    }
+    #main-navigation.active .fa-times {
+        display: inline-block;
+    }
+    #menu-main-menu li {
+        padding: 20px;
+        background: #111;
+        width: 767px;
+    }
+    .landing-bio {
+        padding: 30px;
+    }
+    .landing-bio img {
+        margin-bottom: 50px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 0;
+        height: 70px;
+        align-items: center;
+        background: #111;
+    }
+    .navbar .placeholder {
+        flex-grow:1;
+        height: 40px;
+    }
+    ul#menu-main-menu {
+        display: flex;
+        margin-right: 30px;
+        flex-direction: row;
+        justify-content: flex-end;
+        background:#111;
+    }
+    ul#menu-main-menu li {
+        margin: 0;
+        text-align: center;
+    }
+    .main-menu-link  {
+        margin-left: 40px;
+    }
+    .navbar-toggle {
+        display: none;
+    }
+    .main-menu-link:hover {
+        color: white;
+    }
+    .landing-bio {
+        display: flex;
+    }
+    .landing-bio img {
+        height: 60vh;
+        width: auto;
+        margin: 5vh 10vw;
+    }
+    .landing-bio .wp-block-media-text__content {
+        padding-top:10%;
+    }
+}
+
+footer {
+    background:aliceblue;
+    padding:10px;
+}
+#wordpress-blurb {
+    font-size:16px;
+    font-style: italic;
+    bottom:0px;
+    right:0px;
+}
+#wordpress-blurb a {
+    color:#39c; /* wordpress blue */
+}
