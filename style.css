@@ -1,7 +1,7 @@
 /*
-Theme Name: Aspire
+Theme Name: Aspire (backup)
 Author: qqz
-Description: Simple theme for my portfolio
+Description: Simple portfolio
 Version: 1.0
 Text Domain: aspire       
 
@@ -38,17 +38,17 @@ body.admin-bar {
     min-height: 50px;
 }
 
-ul#menu-main-menu {
+ul.menu {
     list-style-type: none;
 }
-#menu-main-menu a {
+.menu a {
     color: white;
     text-decoration: none;
     font-size:22px;
     position: relative;
     padding-bottom: 5px;
 }
-#menu-main-menu a::before {
+.menu a::before {
     content: "";
     position: absolute;
     width: 100%;
@@ -60,7 +60,7 @@ ul#menu-main-menu {
     transform: scaleX(0);
     transition: all 0.3s ease-in-out 0s;
 }
-#menu-main-menu a:hover::before {
+.menu a:hover::before {
     visibility: visible;
     transform: scaleX(1);
 }
@@ -82,7 +82,7 @@ ul#menu-main-menu {
     font-size: 24px;
     z-index: 10;
 }
-ul#menu-main-menu.active {
+ul.menu.active {
     display: block;
 }
 .landing-bio img {
@@ -98,14 +98,55 @@ ul#menu-main-menu.active {
     font-size:36px;
     margin-bottom:20px;
 }
+#site-content.centered {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+}
+#site-content a {
+    color: black;
+    text-decoration: none;
+    border-bottom: 3px solid lightpink;
+}
+#site-content a:hover,
+#site-content a:focus,
+#site-content a:active {
+    background:lightpink;
+}
+
+#site-content h2 {
+    margin-bottom: 10px;
+}
+#site-content article {
+    margin-bottom:30px;
+}
+article {
+    font-family: 'Open Sans', Helvetica, sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 500;
+    font-family: 'Itim', Arial, Helvetica, sans-serif;
+}
+article.single h1 {
+    margin-bottom:30px;
+    border-bottom: 3px solid lightpink;
+    display:inline;
+}
+article.single p {
+    margin-top:20px;
+}
+.wp-block-image img {
+    max-width: 100%;
+    height: auto;
+}
 @media screen and (max-width: 767px) {
     
-    #menu-main-menu {
+    .menu {
         position:fixed;
         top: -1000px;
         transition: all 0.5s ease-out;
     }
-    #main-navigation.active #menu-main-menu {
+    #main-navigation.active .menu {
         top: 0px;
     }
     #main-navigation .fa-times {
@@ -117,7 +158,7 @@ ul#menu-main-menu.active {
     #main-navigation.active .fa-times {
         display: inline-block;
     }
-    #menu-main-menu li {
+    .menu li {
         padding: 20px;
         background: #111;
         width: 767px;
@@ -142,14 +183,14 @@ ul#menu-main-menu.active {
         flex-grow:1;
         height: 40px;
     }
-    ul#menu-main-menu {
+    ul.menu {
         display: flex;
         margin-right: 30px;
         flex-direction: row;
         justify-content: flex-end;
         background:#111;
     }
-    ul#menu-main-menu li {
+    ul.menu li {
         margin: 0;
         text-align: center;
     }
@@ -176,14 +217,15 @@ ul#menu-main-menu.active {
 }
 
 footer {
-    background:aliceblue;
     padding:10px;
 }
 #wordpress-blurb {
-    font-size:16px;
+    font-size:0.75rem;
     font-style: italic;
     bottom:0px;
     right:0px;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    color: dimgray;
 }
 #wordpress-blurb a {
     color:#39c; /* wordpress blue */

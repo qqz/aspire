@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<main id="site-content" class="centered" role="main"> 
+<main id="site-content" role="main" class="centered"> 
     <?php
         if ( have_posts() ) {
             wp_reset_query();

@@ -1,4 +1,12 @@
 <?php
+
+    add_theme_support( 'title-tag' );
+    add_theme_support( 'post-thumbnails' );
+    add_theme_support( 'post-formats', ['aside', 'gallery', 'link', 'image', 'quote', 'status', 'video', 'audio', 'chat' ]);
+    add_theme_support( 'html5' );
+    add_theme_support( 'custom-header' );
+
+
     register_nav_menus( [
         'main' => 'Main',
     ] );
@@ -24,4 +32,8 @@
             Walker_Nav_Menu::display_element($element, $children_elements, $max_depth, $depth, $args, $output);
          }
     }
+
+    // Customizer additions.
+    require get_template_directory() . '/classes/class-aspire-customize.php';
+    new Aspire_Customize();
 ?>
