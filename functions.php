@@ -5,7 +5,7 @@
     add_theme_support( 'post-formats', ['aside', 'gallery', 'link', 'image', 'quote', 'status', 'video', 'audio', 'chat' ]);
     add_theme_support( 'html5' );
     add_theme_support( 'custom-header' );
-
+    add_theme_support( 'editor-styles' );
 
     register_nav_menus( [
         'main' => 'Main',

@@ -35,6 +35,7 @@
                 border-color: <?php echo get_theme_mod('hover_accent_color'); ?>;
             }
         </style>
+        <?php wp_head(); ?>
     </head>
     <body <?php body_class(); ?>>
         <main>

@@ -27,9 +27,6 @@ main {
 footer {
     flex-shrink: 0;
 }
-body.admin-bar {
-    padding-top: 30px;
-}
 
 .navbar {
     font-size: 18px;
@@ -205,11 +202,6 @@ article.single p {
     }
     .landing-bio {
         display: flex;
-    }
-    .landing-bio img {
-        height: 60vh;
-        width: auto;
-        margin: 5vh 10vw;
     }
     .landing-bio .wp-block-media-text__content {
         padding-top:10%;
