@@ -12,7 +12,7 @@ Text Domain: aspire
     margin: 0;
 }
 body {
-    font-family: 'Itim', Arial, Helvetica, sans-serif;
+    font-family: 'Quicksand', Arial, Helvetica, sans-serif;
 }
 html, body {
     height: 100%;
@@ -30,7 +30,6 @@ footer {
 
 .navbar {
     font-size: 18px;
-    background:#111;
     padding-bottom: 10px;
     min-height: 50px;
 }
@@ -39,7 +38,7 @@ ul.menu {
     list-style-type: none;
 }
 .menu a {
-    color: white;
+    color: #767676;
     text-decoration: none;
     font-size:22px;
     position: relative;
@@ -75,7 +74,6 @@ ul.menu {
     top: 10px;
     right: 20px;
     cursor: pointer;
-    color: white;
     font-size: 24px;
     z-index: 10;
 }
@@ -101,7 +99,7 @@ ul.menu.active {
     padding: 30px;
 }
 #site-content a {
-    color: black;
+    color: #767676;
     text-decoration: none;
     border-bottom: 3px solid lightpink;
 }
@@ -112,17 +110,20 @@ ul.menu.active {
 }
 
 #site-content h2 {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+}
+#site-content .wp-block-media-text h2 {
+    text-decoration: underline lightpink;
 }
 #site-content article {
     margin-bottom:30px;
 }
 article {
-    font-family: 'Open Sans', Helvetica, sans-serif;
+    line-height:1.5rem;
 }
 h1, h2, h3, h4, h5, h6 {
     font-weight: 500;
-    font-family: 'Itim', Arial, Helvetica, sans-serif;
+    font-family: 'Quicksand', Arial, Helvetica, sans-serif;
 }
 article.single h1 {
     margin-bottom:30px;
@@ -135,6 +136,12 @@ article.single p {
 .wp-block-image img {
     max-width: 100%;
     height: auto;
+}
+.wp-block-media-text__content p {
+    line-height: 2rem;
+}
+.wp-block-media-text>.wp-block-media-text__media {
+    margin-right: 20px;
 }
 @media screen and (max-width: 767px) {
     
@@ -157,7 +164,7 @@ article.single p {
     }
     .menu li {
         padding: 20px;
-        background: #111;
+        color:#767676;
         width: 767px;
     }
     .landing-bio {
@@ -174,7 +181,6 @@ article.single p {
         padding-bottom: 0;
         height: 70px;
         align-items: center;
-        background: #111;
     }
     .navbar .placeholder {
         flex-grow:1;
@@ -185,7 +191,6 @@ article.single p {
         margin-right: 30px;
         flex-direction: row;
         justify-content: flex-end;
-        background:#111;
     }
     ul.menu li {
         margin: 0;
@@ -196,9 +201,6 @@ article.single p {
     }
     .navbar-toggle {
         display: none;
-    }
-    .main-menu-link:hover {
-        color: white;
     }
     .landing-bio {
         display: flex;
@@ -217,7 +219,7 @@ footer {
     bottom:0px;
     right:0px;
     font-family: 'Open Sans', Helvetica, sans-serif;
-    color: dimgray;
+    color: #767676;
 }
 #wordpress-blurb a {
     color:#39c; /* wordpress blue */
