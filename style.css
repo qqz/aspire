@@ -111,6 +111,7 @@ ul.menu.active {
 
 #site-content h2 {
     margin-bottom: 20px;
+    line-height: 2rem;
 }
 #site-content .wp-block-media-text h2 {
     text-decoration: underline lightpink;
@@ -161,6 +162,10 @@ article.single p {
     }
     #main-navigation.active .fa-times {
         display: inline-block;
+    }
+    ul#menu-main {
+        background: white;
+        height: 100%;
     }
     .menu li {
         padding: 20px;

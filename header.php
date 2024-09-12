@@ -37,7 +37,7 @@
             article.single h1 {
                 border-color: <?php echo get_theme_mod('hover_accent_color'); ?>;
             }
-            #site-content #site-content .wp-block-media-text h2 {
+            #site-content .wp-block-media-text h2 {
                 text-decoration-color: <?php echo get_theme_mod('hover_accent_color'); ?>;
             }
         </style>
