@@ -111,6 +111,8 @@ ul.menu.active {
 
 #site-content h2 {
     margin-bottom: 20px;
+}
+h2.entry-title {
     line-height: 2rem;
 }
 #site-content .wp-block-media-text h2 {
